@@ -1,0 +1,3 @@
+[submodule "VSTimeMetrics"]
+	path = VSTimeMetrics
+	url = git@github.com:silvansky/VSTimeMetrics.git

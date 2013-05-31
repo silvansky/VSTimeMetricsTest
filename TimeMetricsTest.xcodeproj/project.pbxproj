@@ -10,6 +10,8 @@
 		C54F106F1758B8A0000DF5B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54F106E1758B8A0000DF5B2 /* Foundation.framework */; };
 		C54F10721758B8A0000DF5B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F10711758B8A0000DF5B2 /* main.m */; };
 		C54F10761758B8A0000DF5B2 /* TimeMetricsTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C54F10751758B8A0000DF5B2 /* TimeMetricsTest.1 */; };
+		C54F10841758B8E5000DF5B2 /* VSReadWriteLock.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F10811758B8E5000DF5B2 /* VSReadWriteLock.m */; };
+		C54F10851758B8E5000DF5B2 /* VSTimeMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = C54F10831758B8E5000DF5B2 /* VSTimeMetrics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		C54F10711758B8A0000DF5B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C54F10741758B8A0000DF5B2 /* TimeMetricsTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TimeMetricsTest-Prefix.pch"; sourceTree = "<group>"; };
 		C54F10751758B8A0000DF5B2 /* TimeMetricsTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TimeMetricsTest.1; sourceTree = "<group>"; };
+		C54F10801758B8E5000DF5B2 /* VSReadWriteLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSReadWriteLock.h; sourceTree = "<group>"; };
+		C54F10811758B8E5000DF5B2 /* VSReadWriteLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSReadWriteLock.m; sourceTree = "<group>"; };
+		C54F10821758B8E5000DF5B2 /* VSTimeMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSTimeMetrics.h; sourceTree = "<group>"; };
+		C54F10831758B8E5000DF5B2 /* VSTimeMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSTimeMetrics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,7 @@
 		C54F10621758B89F000DF5B2 = {
 			isa = PBXGroup;
 			children = (
+				C54F107C1758B8E5000DF5B2 /* VSTimeMetrics */,
 				C54F10701758B8A0000DF5B2 /* TimeMetricsTest */,
 				C54F106D1758B8A0000DF5B2 /* Frameworks */,
 				C54F106C1758B8A0000DF5B2 /* Products */,
@@ -86,6 +93,17 @@
 				C54F10741758B8A0000DF5B2 /* TimeMetricsTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C54F107C1758B8E5000DF5B2 /* VSTimeMetrics */ = {
+			isa = PBXGroup;
+			children = (
+				C54F10801758B8E5000DF5B2 /* VSReadWriteLock.h */,
+				C54F10811758B8E5000DF5B2 /* VSReadWriteLock.m */,
+				C54F10821758B8E5000DF5B2 /* VSTimeMetrics.h */,
+				C54F10831758B8E5000DF5B2 /* VSTimeMetrics.m */,
+			);
+			path = VSTimeMetrics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54F10721758B8A0000DF5B2 /* main.m in Sources */,
+				C54F10841758B8E5000DF5B2 /* VSReadWriteLock.m in Sources */,
+				C54F10851758B8E5000DF5B2 /* VSTimeMetrics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
