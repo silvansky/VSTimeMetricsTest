@@ -2,15 +2,15 @@
 //  main.m
 //  TimeMetricsTest
 //
-//  Created by Valentine Gorshkov on 31.05.13.
+//  Created by Valentine Silvansky on 31.05.13.
 //  Copyright (c) 2013 silvansky. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "VSTimeMetrics.h"
 
-#define NUM_THREADS   4
-#define MAX_I         200
+#define NUM_THREADS   10
+#define MAX_I         600
 
 int main(int argc, const char * argv[])
 {
@@ -50,6 +50,7 @@ int main(int argc, const char * argv[])
 		[[VSTimeMetrics sharedInstance] finishMeasuringForKey:@"total"];
 		NSLog(@"array:\n\tlast: %f,\n\tavg: %f,\n\ttotal: %f", [[VSTimeMetrics sharedInstance] lastMeasurementForKey:@"array"], [[VSTimeMetrics sharedInstance] averageMeasurementForKey:@"array"], [[VSTimeMetrics sharedInstance] totalMeasurementForKey:@"array"]);
 		NSLog(@"total: %f", [[VSTimeMetrics sharedInstance] lastMeasurementForKey:@"array"]);
+		NSLog(@"Report: %@", [[VSTimeMetrics sharedInstance] measurementReport]);
 	}
 	return 0;
 }
