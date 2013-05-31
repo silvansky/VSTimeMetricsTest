@@ -10,6 +10,7 @@
 #import "VSTimeMetrics.h"
 
 #define NUM_THREADS   4
+#define MAX_I         200
 
 int main(int argc, const char * argv[])
 {
@@ -21,9 +22,10 @@ int main(int argc, const char * argv[])
 		{
 			queues[i] = dispatch_queue_create("async queue", DISPATCH_QUEUE_CONCURRENT);
 		}
+		NSLog(@"Starting with maximum i %d, number of threads %d", MAX_I, NUM_THREADS);
 		[[VSTimeMetrics sharedInstance] startMeasuringForKey:@"total"];
 		int currentQueue = 0;
-		for (int i = 1; i < 100; i++)
+		for (int i = 1; i < MAX_I; i++)
 		{
 			dispatch_block_t block = ^{
 				@autoreleasepool
