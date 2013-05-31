@@ -5,3 +5,10 @@ VSTimeMetrics allows to record code execution time in multithreaded applications
 This demo project contains simple test of multithreaded calculations time profiling.
 
 The source code of VSTimeMetricsTest is distributed under [MIT License](http://en.wikipedia.org/wiki/MIT_License). See file LICENSE for more information.
+
+Note: don't forget to execte these commands:
+
+```
+git submodule init
+git submodule update
+```
